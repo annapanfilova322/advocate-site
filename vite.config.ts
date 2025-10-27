@@ -5,6 +5,7 @@ import {componentTagger} from "pp-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({mode}) => ({
+    base: "/annapanfilova322/", // ← ДОБАВЬТЕ ЭТУ СТРОЧКУ
     plugins: [
         react(),
         mode === 'development' &&
@@ -20,7 +21,7 @@ export default defineConfig(({mode}) => ({
         port: 5173,
         allowedHosts: true,
         hmr: {
-            overlay: false // Disables the error overlay if you only want console errors
+            overlay: false
         }
     },
 }));
